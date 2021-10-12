@@ -1,0 +1,526 @@
+@font-face{
+    font-family: yekan;
+    src: url(../assets/fonts/Yekan.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body{
+    direction: rtl;
+    font-family: yekan, tahoma;
+}
+
+a{
+    text-decoration: none;
+    color: #dc6226;
+}
+
+a,a i,button{
+   transition: all .3s;
+}
+
+ul,ol{
+   list-style-type: none;
+}
+
+.container{
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.flex{
+     display: flex;
+}
+
+.align-item-center{
+     align-items: center;
+}
+
+.justify-content-space-between{
+    justify-content: space-between;
+}
+
+.button{
+    display: inline-block;
+    border: 1px solid #404b52;
+    color: #404b52;
+    padding: .5em 1em;
+    font-size: 18px;
+}
+
+.fixed{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+/* Header Website Style */
+
+header .header{
+    background-image: url(../assets/images/mt-0239-home-pattern-light-gray.jpg);
+    width: 100%;
+}
+
+header .logo{
+    background-color: #dc6226;
+    color: #fff;
+    padding: 1em 2em;
+}
+
+header .logo-text{
+     text-align: center;
+     margin-right: 40px;
+}
+
+header .logo .logo-text h1,
+header .logo .logo-text span{
+     color: #fff;
+}
+
+header .logo .logo-text h1{
+     font-size: 45px;
+}
+
+header .logo .logo-text span{
+    font-size: 14px;
+    margin-top: -10px;
+    display: block;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 5px 15px;
+}
+
+header nav ul li a{
+    color: #fff;
+}
+
+header nav ul li a:hover,
+header nav ul li a.active{
+    color: #dc6226;
+}
+
+header nav ul li.drop-down{
+    position: relative;
+}
+
+header nav ul li.drop-down a::before{
+    content: "";
+    border: 6px solid transparent;
+    border-top-color:#dc6226 ;
+    top: 40px;
+    right: 50%;
+    position: absolute;
+    margin-right: -5px;
+}
+
+header .socials i{
+    color: #808c94;
+    margin-left: 10px;
+    font-size: 24px;
+}
+
+header .socials i:hover{
+    color: #dc6226;
+}
+
+/* Slider Website Style */
+
+.slider{
+    position: relative;
+}
+
+.slider img{
+    width: 100%;
+}
+
+.slider-text-arrow{
+    position: absolute;
+    bottom: 8px;
+    left: 50%;
+    margin-left: -300px;
+    width: 600px;
+    text-align: center;
+    background-color: #dc6226;
+    padding: 1em;
+    color: #fff;
+}
+
+.slider-text-arrow .slider-text h2{
+    font-size: 30px;
+    padding: 0 1em;
+}
+
+.slider-text-arrow .slider-arrow-left i,
+.slider-text-arrow .slider-arrow-right i{
+    cursor: pointer;
+    font-size: 24px;
+}
+
+/* Focus Website Style */
+
+.focus{
+    text-align: center;
+    padding: 40px 0;
+}
+
+.focus h2{
+    font-size: 35px;
+    color: #404b52;
+}
+
+.focus .focus-container{
+    justify-content: space-between;
+}
+
+.focus .focus-single{
+    flex-basis: 23%;
+    padding: 20px 0;
+}
+
+.focus-single img,
+.focus-single h3{
+    margin: 15px 0;
+    color: #404b52;
+}
+
+.focus-single p{
+    color: #949494;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 200%;
+    margin-bottom: 25px;
+}
+
+.focus-single a.button:hover{
+    border-color:  #dc6226;
+    color: #dc6226;
+}
+
+/* Advice Website Style */
+
+.advice{
+    background: url(../assets/images/mt-0239-home-pattern-white.jpg);
+    padding: 40px 0;
+}
+
+.advice .advice-text h2,
+.advice .advice-text p{
+    color: #404b52;
+    text-align: center;
+}
+
+.advice .advice-text h2{
+    margin-bottom: 10px;
+    font-size: 35px;
+}
+
+.advice .advice-text p{
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+.advice .advice-card{
+    justify-content: space-between;
+}
+
+.advice-card .advice-card-single{
+    background-color: #fff;
+    padding: 10px;
+    flex-basis: 32%;
+    text-align: center;
+}
+
+.advice-card .advice-card-single img{
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.advice-card .advice-card-single h2{
+    color: #dc6226;
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
+.advice .advice-card .advice-card-single p{
+    color: #949494;
+    font-size: 14px;
+    margin-bottom: 20px;
+    padding: 0 10px;
+}
+
+.advice .advice-card .advice-card-single a i{
+    color: #404b52;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.advice .advice-card .advice-card-single a i:hover{
+    color: #dc6226;
+}
+
+/* Solution And Learning Website Style */
+
+.solution-learning .solution,
+.solution-learning .learning{
+    flex-basis: 50%;
+    padding: 40px 0;
+}
+
+.solution-learning .solution{
+    background: url(../assets/images/mt-0239-home-pattern-orange.jpg);
+    position: relative;
+}
+
+.solution-learning .learning{
+    background: url(../assets/images/mt-0239-home-pattern-light-gray.jpg);
+    padding-right: 60px;
+}
+
+.solution-learning a.button{
+    border-width: 2px;
+    border-color: #fff;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.solution-learning .solution a.button:hover{
+    border-color: #404b52;
+    color: #404b52;
+}
+
+.solution-learning .learning a.button:hover{
+    border-color: #949494;
+    color: #949494;
+}
+
+.solution-learning .solution .solution-container h2,
+.solution-learning .learning .learning-container h2,
+.solution-learning .learning .learning-container p,
+.solution-learning .solution ul li a,
+.solution-learning .learning ul li a{
+    color: #cfcdcd;
+    margin-bottom: 1em;
+}
+
+.solution-learning .solution .solution-container h2,
+.solution-learning .learning .learning-container h2,
+.solution-learning .solution ul li a{
+    color: #fff;
+}
+
+.solution-learning .solution ul li a,
+.solution-learning .learning ul li a{
+    display: inline-block;
+    margin-right: 2em;
+}
+
+.solution-learning .solution ul li a:hover{
+    color: #404b52;
+}
+
+.solution-learning .learning ul li a:hover{
+    color: #dc6226;
+}
+
+.solution-learning .solution ul li,
+.solution-learning .learning ul li{
+    position: relative;
+    
+}
+.solution-learning .solution ul li::before,
+.solution-learning .learning ul li::before{
+    content: "\f013";
+    position: absolute;
+    font-family: FontAwesome;
+    top: 0;
+    right: 0;
+    margin-top: 5px;
+    color: #cfcdcd;
+}
+
+.learning-container,
+.solution-container{
+    width: 50%;
+    padding: 20px 0;
+}
+
+.solution-learning .solution .solution-container{
+    position: absolute;
+    left: 20px;
+}
+
+/* Brands Website Style */
+
+.brands{
+    padding: 20px 0;
+}
+
+.brands .brands-img img{
+    width: 100%;
+}
+
+.brands i{
+    font-size: 30px;
+    color: #404b52;
+    cursor: pointer;
+}
+
+/* Contact Website Style */
+
+.contact{
+    padding: 40px 0;
+    background:url(../assets/images/mt-0239-home-parallax1.jpg) no-repeat center/ cover fixed;
+    height: 100%;
+}
+
+.contact .contact-container h2{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #2a3236;
+}
+
+.contact .contact-container .form{
+    flex-direction: column;
+}
+
+.contact .contact-container .form input,
+.contact .contact-container .form textarea{
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, .5);
+    color: #cfcdcd;
+    border: 1px solid #cfcdcd;
+    font-family: yekan;
+    
+}
+
+.contact .contact-container .form input::placeholder,
+.contact .contact-container .form textarea::placeholder{
+    color: #cfcdcd;
+}
+
+.contact .contact-container .form textarea{
+    resize: none;
+}
+
+.contact .contact-container .form button{
+    display: inline-block;
+    border: 2px solid #fff;
+    background-color: rgba(0, 0, 0, .3);
+    color: #fff;
+    padding: .5em 1em;
+    font-size: 18px;
+    font-family: yekan;
+    cursor: pointer;
+    width: fit-content;
+}
+
+.contact .contact-container .form button:hover{
+    border-color: #dc6226;
+    color: #dc6226;
+}
+
+/* Address Website Style */
+
+.address{
+    padding: 80px 0;
+    background: url(../assets/images/mt-0239-home-pattern-light-gray.jpg);
+}
+
+.address-container .address-place,
+.address-container .address-mail,
+.address-container .address-phone{
+    flex-basis: 30%;
+}
+
+.address .address-place .address-place-img,
+.address .address-mail .address-mail-img,
+.address .address-phone .address-phone-img{
+    margin-left: 20px;
+}
+
+.address .address-phone .address-phone-text .phone-number{
+    direction: ltr;
+}
+
+.address .address-place .address-place-text,
+.address .address-mail .address-mail-text a,
+.address .address-phone .address-phone-text{
+    color: #fff;
+    font-size: 18px;
+}
+
+.address .address-phone .address-phone-text p{
+    font-size: 16px;
+}
+
+.address .address-mail .address-mail-text a:hover{
+    color: #dc6226;
+}
+
+/* Footer WebSite Style */
+
+.footer{
+    background: url(../assets/images/mt-0239-home-pattern-gray.jpg);
+    padding: 40px 0 150px;
+}
+
+.footer .footer-map{
+    flex-basis: 50%;
+}
+
+.footer .footer-info{
+    flex-basis: 35%;
+}
+
+.footer .footer-info a,
+.footer .footer-info span{
+    color: #fff;
+}
+
+.footer .footer-info .info-text-name a{
+    font-size: 40px;
+}
+
+.footer .footer-info .info-text-privacy a:hover{
+    color: #dc6226;
+}
+
+.footer .footer-info .info-text-privacy{
+    font-size: 14px;
+}
+
+.footer .footer-info .socials i{
+    font-size: 30px;
+    color: #dc6226;
+    margin-left: 10px;
+}
+
+.footer .footer-info .socials i:hover{
+    color: #808c94;
+}
+
+/* Footer Arrow Up Style */
+
+.footer .up-arrow-fixed{
+    position: fixed;
+    bottom: 10%;
+    right: 10%;
+}
+
+.footer .up-arrow-fixed .up-arrow i{
+    font-size: 50px;
+    color: rgba(0, 0, 0, .3);
+}
+
+.footer .up-arrow-fixed .up-arrow i:hover{
+    color: #dc6226
+}
