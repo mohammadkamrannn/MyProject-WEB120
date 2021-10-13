@@ -144,12 +144,12 @@ header .socials i:hover{
     position: absolute;
     bottom: 8px;
     left: 50%;
-    margin-left: -300px;
-    width: 600px;
     text-align: center;
     background-color: #dc6226;
     padding: 1em;
     color: #fff;
+    transform: translate(-50%, 0);
+    padding: 30px;
 }
 
 .slider-text-arrow .slider-text h2{
@@ -270,17 +270,15 @@ header .socials i:hover{
 .solution-learning .solution,
 .solution-learning .learning{
     flex-basis: 50%;
-    padding: 40px 0;
+    padding: 40px 60px;
 }
 
 .solution-learning .solution{
     background: url(../assets/images/mt-0239-home-pattern-orange.jpg);
-    position: relative;
 }
 
 .solution-learning .learning{
     background: url(../assets/images/mt-0239-home-pattern-light-gray.jpg);
-    padding-right: 60px;
 }
 
 .solution-learning a.button{
@@ -345,15 +343,14 @@ header .socials i:hover{
     color: #cfcdcd;
 }
 
+.solution-learning .solution{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
 .learning-container,
 .solution-container{
     width: 50%;
-    padding: 20px 0;
-}
-
-.solution-learning .solution .solution-container{
-    position: absolute;
-    left: 20px;
 }
 
 /* Brands Website Style */
@@ -522,5 +519,7 @@ header .socials i:hover{
 }
 
 .footer .up-arrow-fixed .up-arrow i:hover{
-    color: #dc6226
+    color: #dc6226;
+    text-shadow: 0 0 4px rgba(0, 0, 0, .5);
+
 }
