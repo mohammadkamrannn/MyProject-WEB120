@@ -10,6 +10,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
 body{
     direction: rtl;
     font-family: yekan, tahoma;
@@ -53,11 +57,11 @@ ul,ol{
     font-size: 18px;
 }
 
-.fixed{
+/* .fixed{
     position: sticky;
     top: 0;
     z-index: 1;
-}
+} */
 
 /* Header Website Style */
 
